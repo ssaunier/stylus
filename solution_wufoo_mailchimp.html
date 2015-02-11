@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Charset -->
+  <meta charset="utf-8">
+
+  <!-- Viewport for Responsiveness -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+
+  <title>Stylus</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <!-- Google fonts CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="stylesheets/home.css">
+
+</head>
+<body>
+
+  <div id="banner">
+    <h1>Styl.us</h1>
+    <br>
+    <p>Turn your pen into you best friend</p>
+    <p>Make every line you write count..</p>
+    <br>
+    <a href="" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#order-form">GET YOUR STYLUS</a>
+  </div>
+  <div class="blue-bg padded">
+    <div class="container text-center" id="features">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/paper.svg">
+            <h2>Natural writing</h2>
+            <p>Don't change your habits, write with a pen <strong>on paper notebooks</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/computer.svg">
+            <h2>Sync. copy</h2>
+            <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/analytics.svg">
+            <h2>Analytics</h2>
+            <p>Get feedbacks on the way you write, <strong>your favorite words, your frequent mistakes</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/data.svg">
+            <h2>Storing your texts</h2>
+            <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center padded">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="http://iceme.us10.list-manage.com/subscribe/post?u=e31729dec0eb3be51d2a19562&amp;id=4f69228fac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+
+        <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="bob@bob.com">
+
+        <div style="position: absolute; left: -5000px;">
+          <input type="text" name="b_e31729dec0eb3be51d2a19562_4f69228fac" tabindex="-1" value="">
+        </div>
+
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
+      </div>
+
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    </form>
+    </div>
+    <script type='text/javascript' src='http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='number';fnames[4]='MMERGE4';ftypes[4]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+
+
+  </div>
+
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+  var myOptions = {
+    zoom: 16,
+    center: myLatlng,
+    scrollwheel: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,
+    title:"You are here!"
+  });
+  </script>
+
+  <div id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <ul class="list-inline">
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 text-right">
+          <p>Stylus is a fictive product by LeWagon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order modal -->
+  <div class="modal fade" id="order-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Order</h4>
+        </div>
+        <div class="modal-body">
+          <div id="wufoo-z1kdwtya0uwmyra">
+          Fill out my <a href="https://escplanding.wufoo.com/forms/z1kdwtya0uwmyra">online form</a>.
+          </div>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">The easy to use <a href="http://www.wufoo.com/form-builder/">Wufoo form builder</a> helps you make forms easy, fast, and fun.</div>
+          <script type="text/javascript">var z1kdwtya0uwmyra;(function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'escplanding',
+          'formHash':'z1kdwtya0uwmyra',
+          'autoResize':true,
+          'height':'426',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { z1kdwtya0uwmyra = new WufooForm();z1kdwtya0uwmyra.initialize(options);z1kdwtya0uwmyra.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');</script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
